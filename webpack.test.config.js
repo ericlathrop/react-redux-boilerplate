@@ -12,7 +12,7 @@ fs.readdirSync("node_modules")
 
 module.exports = {
 	entry: {
-		test: [ "./test/index.js" ]
+		test: [ "./webpack.test.bootstrap.js" ]
 	},
 	devtool: "source-map",
 	output: {
