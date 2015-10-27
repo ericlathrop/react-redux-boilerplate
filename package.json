@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "test": "tape test/*.js | tap-spec"
+    "test": "webpack --config webpack.test.config.js && tape build/test.js | tap-spec"
   },
   "author": "Eric Lathrop <eric@ericlathrop.com> (http://ericlathrop.com/)",
   "license": "MIT",
