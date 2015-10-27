@@ -1,4 +1,5 @@
 var fs = require("fs");
+var webpack = require("webpack");
 
 var nodeModules = {};
 fs.readdirSync("node_modules")
@@ -26,6 +27,10 @@ module.exports = {
 			{ test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader" }
 		]
 	},
+	plugins: [
+		new webpack.BannerPlugin("require(\"source-map-support\").install();",
+								{ raw: true, entryOnly: false })
+	],
 	externals: nodeModules,
 	target: "node"
 };
