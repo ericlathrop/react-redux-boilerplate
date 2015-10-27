@@ -5,8 +5,9 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "webpack",
+    "build-test": "webpack --config webpack.test.config.js",
     "watch": "webpack --watch",
-    "test": "webpack --config webpack.test.config.js && tape build/test.js | tap-spec"
+    "test": "npm run build-test && tape build/test.js | tap-spec"
   },
   "author": "Eric Lathrop <eric@ericlathrop.com> (http://ericlathrop.com/)",
   "license": "MIT",
