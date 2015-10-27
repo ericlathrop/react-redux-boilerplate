@@ -23,7 +23,8 @@
     "webpack": "^1.12.2"
   },
   "dependencies": {
-    "history": "^1.12.5",
+    "history": "^1.12.6",
+    "immutable": "^3.7.5",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-redux": "^4.0.0",
