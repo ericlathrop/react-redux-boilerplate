@@ -1,0 +1,32 @@
+{
+  "name": "react-redux-boilerplate",
+  "version": "0.0.0",
+  "description": "Boilerplate for SPA with React, Redux, Babel, Eslint, & Tape",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "test": "tape test/*.js | tap-spec"
+  },
+  "author": "Eric Lathrop <eric@ericlathrop.com> (http://ericlathrop.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "eslint": "^1.7.2",
+    "eslint-loader": "^1.1.0",
+    "eslint-plugin-react": "^3.6.3",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2",
+    "webpack": "^1.12.2"
+  },
+  "dependencies": {
+    "history": "^1.12.5",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-redux": "^4.0.0",
+    "react-router": "^1.0.0-rc3",
+    "redux": "^3.0.2",
+    "redux-router": "^1.0.0-beta3"
+  }
+}
