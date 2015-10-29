@@ -25,8 +25,8 @@
   "dependencies": {
     "history": "^1.12.6",
     "immutable": "^3.7.5",
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
     "react-redux": "^4.0.0",
     "react-router": "^1.0.0-rc3",
     "redux": "^3.0.2",
