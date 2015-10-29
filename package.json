@@ -7,6 +7,7 @@
     "build": "webpack",
     "build-test": "webpack --config webpack.test.config.js",
     "watch": "webpack --watch",
+    "start": "webpack-dev-server --hot --inline --content-base public --port 4000",
     "test": "npm run build-test && tape build/test.js | tap-spec"
   },
   "author": "Eric Lathrop <eric@ericlathrop.com> (http://ericlathrop.com/)",
@@ -20,7 +21,8 @@
     "source-map-support": "^0.3.3",
     "tap-spec": "^4.1.0",
     "tape": "^4.2.2",
-    "webpack": "^1.12.2"
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
     "history": "^1.13.0",
