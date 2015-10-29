@@ -23,7 +23,7 @@
     "webpack": "^1.12.2"
   },
   "dependencies": {
-    "history": "^1.12.6",
+    "history": "^1.13.0",
     "immutable": "^3.7.5",
     "react": "^0.14.1",
     "react-dom": "^0.14.1",
