@@ -16,9 +16,9 @@ This boilerplate app has all the pieces set up for what I think is a top-shelf f
 
 ## Commands
 
-`npm install` to install all the dependencies.
-`npm start` to start a [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) on http://localhost:4000. The dev server will live-reload the page when you save changes to the code.
-`npm run build` to build the app.js file for the browser.
-`npm run watch` to build the app.js file for the browser and rebuild it when you save changes to the code.
-`npm test` to run the tests.
-`npm run test-watch` to run the tests and rerun the tests when you save changes to the code.
+* `npm install` to install all the dependencies.
+* `npm start` to start a [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) on http://localhost:4000. The dev server will live-reload the page when you save changes to the code.
+* `npm run build` to build the app.js file for the browser.
+* `npm run watch` to build the app.js file for the browser and rebuild it when you save changes to the code.
+* `npm test` to run the tests.
+* `npm run test-watch` to run the tests and rerun the tests when you save changes to the code.
