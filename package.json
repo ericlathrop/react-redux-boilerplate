@@ -21,7 +21,6 @@
     "eslint-loader": "^1.1.0",
     "eslint-plugin-react": "^3.6.3",
     "mocha": "^2.3.3",
-    "source-map-support": "^0.3.3",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1"
   },
