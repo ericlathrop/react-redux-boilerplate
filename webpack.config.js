@@ -2,6 +2,9 @@ module.exports = {
 	entry: {
 		app: [ "." ]
 	},
+	devServer: {
+		historyApiFallback: true
+	},
 	devtool: "source-map",
 	output: {
 		path: __dirname + "/build",
