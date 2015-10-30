@@ -1,6 +1,7 @@
-import test from "tape";
+import { expect } from "chai";
 
-test("the truth", t => {
-	t.plan(1);
-	t.equals(1 + 1, 2);
+describe("addition", () => {
+	it("should add two numbers", () => {
+		expect(1 + 1).to.equal(2);
+	});
 });
