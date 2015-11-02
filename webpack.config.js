@@ -1,3 +1,6 @@
+var fs = require("fs");
+var babelOptions = JSON.parse(fs.readFileSync(".babelrc"));
+
 module.exports = {
 	entry: {
 		app: [ "." ]
@@ -24,9 +27,7 @@ module.exports = {
 				test: /\.jsx?$/,
 				exclude: /node_modules/,
 				loader: "babel-loader",
-				query: {
-					presets: ["es2015", "react"]
-				}
+				query: babelOptions
 			}
 		]
 	}
