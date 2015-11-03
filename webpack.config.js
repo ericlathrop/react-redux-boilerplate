@@ -28,7 +28,13 @@ module.exports = {
 				exclude: /node_modules/,
 				loader: "babel-loader",
 				query: babelOptions
+			},
+			{
+				test: /\.scss$/,
+				loaders: ["style", "css", "sass"]
 			}
 		]
+	},
+	sassLoader: {
 	}
 };
