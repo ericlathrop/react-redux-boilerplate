@@ -1,4 +1,6 @@
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var fs = require("fs");
+
 var babelOptions = JSON.parse(fs.readFileSync(".babelrc"));
 
 module.exports = {
@@ -31,10 +33,13 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				loaders: ["style", "css", "autoprefixer-loader", "sass"]
+				loader: ExtractTextPlugin.extract("style", ["css", "autoprefixer", "sass"])
 			}
 		]
 	},
+	plugins: [
+		new ExtractTextPlugin("[name].css")
+	],
 	sassLoader: {
 	}
 };
