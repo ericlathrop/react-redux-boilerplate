@@ -11,6 +11,8 @@ This boilerplate app has all the pieces set up for what I think is a top-shelf f
 * [webpack](https://webpack.github.io/) for bundling modules for the browser
 * [mocha](http://mochajs.org/) & [chai](http://chaijs.com/) for testing
 * [eslint](http://eslint.org/) for catching common bugs and style issues
+* [node-sass](https://github.com/sass/node-sass) for better CSS
+* [autoprefixer-loader](https://github.com/passy/autoprefixer-loader) to never have to write vendor prefixed CSS rules again
 
 [A Comprehensive Guide to Test-First Development with Redux, React, and Immutable](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html) helped me put a lot of this together.
 
