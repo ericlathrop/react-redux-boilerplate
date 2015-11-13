@@ -5,7 +5,7 @@ This boilerplate app has all the pieces set up for what I think is a top-shelf f
 
 * [react](http://facebook.github.io/react/) for rendering
 * [redux](http://redux.js.org/) for state management
-* [redux-router](https://github.com/rackt/redux-router) & [react-router](https://github.com/rackt/react-router) for client-side routing
+* [react-router](https://github.com/rackt/react-router) for client-side routing
 * [immutable](http://facebook.github.io/immutable-js/) for an efficient data store
 * [babel](http://babeljs.io/) for the latest & greatest JavaScript
 * [webpack](https://webpack.github.io/) for bundling modules for the browser
