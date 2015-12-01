@@ -100,6 +100,11 @@
         "experimentalObjectRestSpread": true,
         "modules": true
     },
+    "globals": {
+        "__PRODUCTION__": true,
+        "__TEST__": true,
+        "__DEVELOPMENT__": true
+    },
     "plugins": [
         "react"
     ]

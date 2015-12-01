@@ -1,7 +1,10 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var fs = require("fs");
+var webpack = require("webpack");
 
 var babelOptions = JSON.parse(fs.readFileSync(".babelrc"));
+
+var environment = process.env["NODE_ENV"] || "development";
 
 module.exports = {
 	entry: {
@@ -38,7 +41,12 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin("[name].css")
+		new ExtractTextPlugin("[name].css"),
+		new webpack.DefinePlugin({
+			__PRODUCTION__: environment === "production",
+			__TEST__: environment === "test",
+			__DEVELOPMENT__: environment === "development"
+		})
 	],
 	sassLoader: {
 	}
