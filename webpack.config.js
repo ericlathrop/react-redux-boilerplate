@@ -1,3 +1,4 @@
+var autoprefixer = require("autoprefixer");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var fs = require("fs");
 var webpack = require("webpack");
@@ -36,7 +37,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract("style", ["css", "autoprefixer", "sass"])
+        loader: ExtractTextPlugin.extract("style", ["css", "postcss", "sass"])
       }
     ]
   },
@@ -48,6 +49,9 @@ module.exports = {
       __DEVELOPMENT__: environment === "development"
     })
   ],
+  postcss: function() {
+    return [autoprefixer];
+  },
   sassLoader: {
   }
 };
