@@ -37,7 +37,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract("style", ["css", "postcss", "sass"])
+        loader: ExtractTextPlugin.extract("style-loader", ["css-loader", "postcss-loader", "sass-loader"])
       }
     ]
   },
@@ -50,7 +50,7 @@ module.exports = {
     })
   ],
   postcss: function() {
-    return [autoprefixer];
+    return [autoprefixer({ browsers: ["last 2 versions"] })];
   },
   sassLoader: {
   }
