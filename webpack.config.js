@@ -5,7 +5,7 @@ var webpack = require("webpack");
 
 var babelOptions = JSON.parse(fs.readFileSync(".babelrc"));
 
-var environment = process.env["NODE_ENV"] || "development";
+var environment = process.env.NODE_ENV || "development";
 
 module.exports = {
   entry: {
