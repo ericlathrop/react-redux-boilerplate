@@ -116,6 +116,10 @@
     "react/wrap-multilines": 1
   },
   "settings": {
+    "import/ignore": [
+      "node_modules",
+      "\\.json$"
+    ],
     "import/resolver": "webpack"
   }
 }
