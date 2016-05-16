@@ -1193,9 +1193,9 @@
       "resolved": "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-1.8.0.tgz"
     },
     "eslint-plugin-react": {
-      "version": "4.3.0",
-      "from": "eslint-plugin-react@>=4.3.0 <5.0.0",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-4.3.0.tgz"
+      "version": "5.1.1",
+      "from": "eslint-plugin-react@5.1.1",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-5.1.1.tgz"
     },
     "espree": {
       "version": "3.1.4",
