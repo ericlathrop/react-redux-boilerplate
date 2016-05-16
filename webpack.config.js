@@ -48,9 +48,9 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin("[name].css"),
     new webpack.DefinePlugin({
-      __PRODUCTION__: environment === "production",
-      __TEST__: environment === "test",
-      __DEVELOPMENT__: environment === "development"
+      "process.env": {
+        "NODE_ENV": JSON.stringify(environment)
+      }
     })
   ],
   postcss: function() {
