@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch --color",
-    "start": "webpack-dev-server --hot --inline --content-base public --port 4000",
+    "start": "webpack-dev-server --hot --inline --content-base public --host 0.0.0.0 --port 4000",
     "test": "mocha --compilers js:babel-core/register --require ./test/test-helper.js --recursive",
     "test-watch": "npm test -- --watch"
   },
