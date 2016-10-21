@@ -45,14 +45,26 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new ExtractTextPlugin("[name].css"),
-    new webpack.DefinePlugin({
-      "process.env": {
-        "NODE_ENV": JSON.stringify(environment)
-      }
-    })
-  ],
+  plugins: (function() {
+    var plugins = [
+      new ExtractTextPlugin("[name].css"),
+      new webpack.DefinePlugin({
+        "process.env": {
+          "NODE_ENV": JSON.stringify(environment)
+        }
+      })
+    ];
+    if (environment === "production") {
+      plugins.push(
+        new webpack.optimize.UglifyJsPlugin({
+          compress: {
+            warnings: false
+          }
+        })
+      );
+    }
+    return plugins;
+  }()),
   postcss: function() {
     return [autoprefixer({ browsers: ["last 2 versions"] })];
   },
