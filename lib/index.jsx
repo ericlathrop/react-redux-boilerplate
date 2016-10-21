@@ -11,19 +11,17 @@ import App from "./pages/app";
 import Contact from "./pages/contact";
 import HomePage from "./pages/home-page";
 
-import "../css/index.scss";
+import "../scss/index.scss";
 
 const routes = (
-	<Route component={App}
-		path="/">
-		<IndexRoute component={HomePage} />
-		<Route component={Contact}
-			path="contact-us" />
-	</Route>
+  <Route component={App} path="/">
+    <IndexRoute component={HomePage} />
+    <Route component={Contact} path="contact-us" />
+  </Route>
 );
 
 const store = applyMiddleware(thunkMiddleware)(createStore)(reducer);
 
 render(<Provider store={store}>
-	<Router history={browserHistory} routes={routes} />
+  <Router history={browserHistory} routes={routes} />
 </Provider>, document.getElementById("container"));

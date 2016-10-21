@@ -2,7 +2,7 @@
   "name": "react-redux-boilerplate",
   "version": "0.0.0",
   "description": "Boilerplate SPA with React, Redux, Immutable, Babel, Eslint, & Mocha",
-  "main": "lib/index.js",
+  "main": "lib/index.jsx",
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch --color",

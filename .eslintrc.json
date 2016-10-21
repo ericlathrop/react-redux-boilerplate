@@ -8,7 +8,7 @@
     "eslint:recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:react/recommended"
+    "plugin:react/all"
   ],
   "globals": {
     "module": true
@@ -74,7 +74,6 @@
     "no-undef-init": 2,
     "no-underscore-dangle": 2,
     "no-unused-expressions": 2,
-    "no-use-before-define": 2,
     "no-with": 2,
     "quotes": [2, "double"],
     "semi": [2, "always"],
@@ -84,33 +83,17 @@
     "strict": [2, "function"],
     "yoda": [2, "never"],
 
-    "react/display-name": 0,
-    "react/forbid-prop-types": 1,
-    "react/jsx-boolean-value": 1,
     "react/jsx-closing-bracket-location": [1, "after-props"],
-    "react/jsx-curly-spacing": 1,
-    "react/jsx-indent-props": [2, "tab"],
+    "react/jsx-handler-names": 0,
+    "react/jsx-indent": [2, 2],
+    "react/jsx-indent-props": [2, 2],
     "react/jsx-max-props-per-line": 0,
-    "react/jsx-no-duplicate-props": 1,
+    "react/jsx-no-bind": 0,
     "react/jsx-no-literals": 0,
-    "react/jsx-no-undef": 1,
-    "react/jsx-sort-props": 1,
-    "react/jsx-uses-react": 1,
-    "react/jsx-uses-vars": 1,
-    "react/no-danger": 1,
-    "react/no-did-mount-set-state": 1,
-    "react/no-did-update-set-state": 1,
-    "react/no-direct-mutation-state": 1,
-    "react/no-multi-comp": 1,
-    "react/no-set-state": 1,
-    "react/no-unknown-property": 1,
-    "react/prefer-es6-class": 1,
-    "react/prop-types": 0,
-    "react/react-in-jsx-scope": 1,
-    "react/self-closing-comp": 1,
-    "react/sort-prop-types": 1,
-    "react/sort-comp": 1,
-    "react/jsx-wrap-multilines": 1
+    "react/forbid-component-props": 0,
+    "react/no-multi-comp": 0,
+    "react/no-string-refs": 0,
+    "react/prop-types": 0
   },
   "settings": {
     "import/ignore": [
