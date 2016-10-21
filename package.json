@@ -7,6 +7,7 @@
     "build": "webpack",
     "watch": "webpack --watch --color",
     "start": "webpack-dev-server --hot --inline --content-base public --host 0.0.0.0 --port 4000",
+    "storybook": "start-storybook -p 9001 -s ./public --dont-track",
     "test": "mocha --compilers js:babel-core/register --require ./test/test-helper.js --recursive",
     "test-watch": "npm test -- --watch"
   },
@@ -17,6 +18,7 @@
   "author": "Eric Lathrop <eric@ericlathrop.com> (http://ericlathrop.com/)",
   "license": "MIT",
   "devDependencies": {
+    "@kadira/storybook": "^2.24.1",
     "autoprefixer": "^6.5.1",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
